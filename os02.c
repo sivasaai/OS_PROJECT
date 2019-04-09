@@ -235,7 +235,7 @@ int main()
     printf("Enter the total number of processes\n");
     scanf("%d",&n);
     struct info p[n],pc[n],*pc1[n];
-	printf("Enter The processes one by one with pid followed by at,bt,priority\n");
+	printf("Enter The processes one by one with pid followed by at,bt\n");
     for(int i=0;i<n;i++)
     {
     	scanf("%d%d%d",&p[i].p_id,&p[i].at,&p[i].bt); 
