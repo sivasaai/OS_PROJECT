@@ -119,7 +119,7 @@ void WtTat(int chart[],struct info p[],int tt)
 	int pid;
     int swt=0;
     int stat=0;
-    float avgwt,awgwt;
+    float avgwt,avgtat;
 	for(int i=0;i<n;i++)
 	{
 		int l;
@@ -146,10 +146,11 @@ void WtTat(int chart[],struct info p[],int tt)
     for(int i=0;i<n;i++)
     {
         swt=swt+p[i].wt;
-        stat=swt+p[i].tat;
+        stat=stat+p[i].tat;
     }
     avgwt=swt/n;
-    avgwt=stat/n;
+    avgtat=stat/n;
+	printf("Average Waiting Time:%f\t\tAverage Turn Arround Time:%f",avgwt,avgtat);
 }
 //gantt() will prepares the gant chart and prints.
 void gantt(struct info p[])
