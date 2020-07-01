@@ -20,3 +20,4 @@ test cases:p_id     Arrival Time   Burst Time      Output:  Waiting Time        
             4           9             10                        1                     11
             5           0             13                        54                    67
             6           10            12                        41                    53 
+I have added this in my Local System.
